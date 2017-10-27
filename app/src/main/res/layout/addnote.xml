@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/title_edt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/titleHint"
+        android:inputType="textPersonName"
+        android:maxLength="30" />
+
+    <TextView
+        android:id="@+id/title_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/titleField"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/description_edt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:hint="@string/descriptionHint"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:textColorLink="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addPhoto_txv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="@string/addPhoto"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/camera_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0"
+            android:background="@android:color/white"
+            android:tint="@android:color/black"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:id="@+id/gallery_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@android:color/white"
+            android:tint="@android:color/black"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/textColorPrimary"
+            android:backgroundTint="@color/windowBackground"
+            android:text="@string/btnCancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/textColorPrimary"
+            android:backgroundTint="@color/windowBackground"
+            android:text="@string/btnOk" />
+
+    </LinearLayout>
+
+</LinearLayout>
